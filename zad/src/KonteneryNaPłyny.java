@@ -18,7 +18,7 @@ public class KonteneryNaPłyny extends Kontenery implements IHazardNotifier {
         if(masaLadunku>maxLadunku*limit){
             hazardNotify(numerSeryjny);
             throw new OverfillException("Próba wykonania niebezpiecznej operacji");
-        } 
+        }
         this.masaLadunku = masaLadunku;
     }
 
